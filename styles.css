@@ -1452,12 +1452,12 @@
     min-height: 0 !important;
     max-height: none !important;
     padding-bottom: 18px !important;
-    margin-bottom: 0 !important; /* prevent extra blank area */
+    margin-bottom: 2 !important; /* prevent extra blank area */
   }
 
   /* ensure thumbs don't reserve extra space */
   .slide[data-section="graphics"] .graphics-thumbs{
     padding-bottom: 6px !important;
-    margin-bottom: 0 !important;
+    margin-bottom: 2 !important;
   }
 }
