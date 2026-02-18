@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Rafael Trejo - Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Caladea:wght@400;700&amp;family=Audiowide&amp;family=Changa+One&amp;display=swap" rel="stylesheet"/>
+
+
+<script src="https://w.soundcloud.com/player/api.js"></script>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body data-section="about">
+<div class="lang" id="langToggle" role="button" tabindex="0" aria-label="Toggle language">En/Es</div>
+<main class="slides" id="slides">
+<!-- ABOUT -->
+<section class="slide" data-section="about">
+<div class="hero">
+<p id="heroLine1">Video Editor</p>
+<p id="heroLine2">and motion graphics designer</p>
+<p id="heroLine3">passionate about music, and</p>
+<p id="heroLine4">storytelling</p>
+</div>
+<div aria-label="Open CV" class="cv-button-wrapper">
+<div class="cv-button" role="button" tabindex="0">
+<span>CV</span>
+</div>
+</div>
+</section>
+<!-- VIDEO -->
+<section class="slide" data-section="video">
+<div class="video-shell" aria-label="Video projects">
+<div aria-label="Select video project" class="video-tabs" role="tablist">
+<button aria-selected="true" class="video-tab is-active" data-idx="0" type="button"></button>
+<button aria-selected="false" class="video-tab" data-idx="1" type="button"></button>
+<button aria-selected="false" class="video-tab" data-idx="2" type="button"></button>
+<button aria-selected="false" class="video-tab" data-idx="3" type="button"></button>
+<button aria-selected="false" class="video-tab" data-idx="4" type="button"></button>
+<button aria-selected="false" class="video-tab" data-idx="5" type="button"></button>
+<button aria-selected="false" class="video-tab" data-idx="6" type="button"></button>
+</div>
+<div class="panel-card video-card">
+<div aria-label="Project preview" class="video-preview">
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" class="project-youtube" id="projectYouTube" loading="lazy" title="YouTube video player"></iframe>
+<div id="videoPlaceholder" class="video-placeholder">Video coming soon</div>
+</div>
+<div class="video-meta">
+<h2 id="videoTitle"><span id="projectTitle">Freestylers Compilation (Kraken Battles)</span></h2>
+<p id="videoDesc">
+<span id="projectDesc">I planned, recorded, and edited this TikTok-style compilation. We attended a freestyle meet, selected a few standout freestylers, and cut the highlights to showcase their talent and energy.</span>
+</p>
+</div>
+</div>
+</div>
+</section>
+<!-- GRAPHICS -->
+<section class="slide" data-section="graphics">
+  <div class="panel-card graphics-card" aria-label="Graphics projects">
+    <div class="graphics-main" id="graphicsMain" aria-label="Selected design">
+      <img id="graphicsMainImg" src="src/CaracasByNight.png" alt="Selected design" loading="lazy" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/TheRagusto/Site2.0/main/src/CaracasByNight.png';">
+    
+      <button type="button" class="gfull-btn" id="graphicsFullBtn" aria-label="Fullscreen">
+        <svg class="gfull-ic" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor" d="M7 14H5v5h5v-2H7v-3zm0-4h2V7h3V5H5v5zm10 9h-3v2h5v-5h-2v3zm0-14V5h-5v2h3v3h2V5z"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="graphics-thumbs" role="listbox" aria-label="Design thumbnails">
+      <button type="button" class="gthumb is-active" aria-selected="true" data-idx="0" data-src="src/CaracasByNight.png" aria-label="Caracas By Night">
+        <img src="src/CaracasByNight.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/TheRagusto/Site2.0/main/src/CaracasByNight.png';">
+      </button>
+      <button type="button" class="gthumb" aria-selected="false" data-idx="1" data-src="src/Ceiba.jpg" aria-label="Ceiba">
+        <img src="src/Ceiba.jpg" alt="" loading="lazy" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/TheRagusto/Site2.0/main/src/Ceiba.jpg';">
+      </button>
+      <button type="button" class="gthumb" aria-selected="false" data-idx="2" data-src="src/LogicPoster.png" aria-label="Logic Poster">
+        <img src="src/LogicPoster.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/TheRagusto/Site2.0/main/src/LogicPoster.png';">
+      </button>
+      <button type="button" class="gthumb" aria-selected="false" data-idx="3" data-src="src/Recipe.jpg" aria-label="Recipe">
+        <img src="src/Recipe.jpg" alt="" loading="lazy" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/TheRagusto/Site2.0/main/src/Recipe.jpg';">
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- MUSIC -->
+<section class="slide" data-section="music">
+<div aria-label="Music projects" class="music-wrap">
+<div class="music-info">
+<div class="music-now" id="musicNow">NOW PLAYING<span class="np-dots" aria-hidden="true"><span>.</span><span>.</span><span>.</span></span></div>
+<div class="music-title" id="musicTitle">Clouds 1 Mix</div>
+<div class="music-desc" id="musicDesc">Original track on SoundCloud.</div>
+  <iframe id="scPlayer" class="sc-player" title="SoundCloud player" loading="lazy" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A%2F%2Fsoundcloud.com%2Fuser-327547324%2Fclouds1mix-mp3&color=%23000000&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=false&enable_api=true"></iframe>
+</div>
+<div aria-label="Tracks" class="music-grid" role="listbox">
+<button aria-label="Track 1" aria-selected="true" class="music-tile is-active mtile" data-idx="0">
+<video class="tile-sticker" muted loop playsinline preload="metadata" poster="https://media.giphy.com/media/7CheF7K8CPAtWxAWlt/giphy_s.gif">
+  <source src="https://media.giphy.com/media/7CheF7K8CPAtWxAWlt/giphy.mp4" type="video/mp4">
+</video>
+
+<span class="tile-num">1</span>
+</button>
+<button aria-label="Track 2" aria-selected="false" class="music-tile mtile" data-idx="1">
+<video class="tile-sticker" muted loop playsinline preload="metadata" poster="https://media.giphy.com/media/7CheF7K8CPAtWxAWlt/giphy_s.gif">
+  <source src="https://media.giphy.com/media/7CheF7K8CPAtWxAWlt/giphy.mp4" type="video/mp4">
+</video>
+
+<span class="tile-num">2</span>
+</button>
+<button aria-label="Track 3" aria-selected="false" class="music-tile mtile" data-idx="2">
+<video class="tile-sticker" muted loop playsinline preload="metadata" poster="https://media.giphy.com/media/7CheF7K8CPAtWxAWlt/giphy_s.gif">
+  <source src="https://media.giphy.com/media/7CheF7K8CPAtWxAWlt/giphy.mp4" type="video/mp4">
+</video>
+
+<span class="tile-num">3</span>
+</button>
+<button aria-label="Track 4" aria-selected="false" class="music-tile mtile" data-idx="3">
+<video class="tile-sticker" muted loop playsinline preload="metadata" poster="https://media.giphy.com/media/7CheF7K8CPAtWxAWlt/giphy_s.gif">
+  <source src="https://media.giphy.com/media/7CheF7K8CPAtWxAWlt/giphy.mp4" type="video/mp4">
+</video>
+
+<span class="tile-num">4</span>
+</button>
+</div>
+</div>
+</section>
+</main>
+<div aria-label="Brand" class="logo" id="logo">
+<span class="logo-name is-rafael">Rafael Trejo</span>
+<span class="logo-name is-ragus">Ragus</span>
+</div>
+<nav aria-label="Primary navigation" class="navbar">
+<a class="is-active" data-nav="about" href="#about">About me</a>
+<a data-nav="video" href="#video">Video</a>
+<a data-nav="graphics" href="#graphics">Graphics</a>
+<a data-nav="music" href="#music">Music</a>
+</nav>
+
+<!-- Graphics fullscreen modal fallback -->
+<div class="gmodal" id="gModal" aria-hidden="true" role="dialog" aria-label="Fullscreen image">
+  <button class="gmodal-close" id="gModalClose" type="button" aria-label="Close fullscreen">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path fill="currentColor" d="M18.3 5.71 12 12l6.3 6.29-1.41 1.42L10.59 13.4 4.3 19.71 2.89 18.3 9.17 12 2.89 5.71 4.3 4.29l6.29 6.3 6.3-6.3z"/>
+    </svg>
+  </button>
+  <img id="gModalImg" alt="Fullscreen design preview"/>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
