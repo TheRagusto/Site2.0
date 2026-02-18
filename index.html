@@ -82,7 +82,14 @@
       <button type="button" class="gthumb" aria-selected="false" data-idx="1"
         data-src="https://raw.githubusercontent.com/TheRagusto/Site2.0/main/src/Ceiba.jpg"
         aria-label="Ceiba">
-        <img src="https://raw.githubusercontent.com/TheRagusto/Site2.0/main/src/Ceiba.jpg" alt="" loading="lazy" />
+        <img
+  src="src/Ceiba.jpg"
+  alt=""
+  loading="lazy"
+  data-fallbacks="src/Ceiba.jpeg,src/CEIBA.jpg,src/CEIBA.jpeg,src/Ceiba.png"
+  onerror="(function(img){var f=(img.dataset.fallbacks||'').split(',');var i=+(img.dataset.fbi||0); if(i<f.length){img.dataset.fbi=i+1; img.src=f[i].trim();} })(this)"
+>
+
       </button>
 
       <button type="button" class="gthumb" aria-selected="false" data-idx="2"
