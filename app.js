@@ -517,7 +517,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const cvWrapper = document.querySelector('.cv-button-wrapper');
     if (cvWrapper) {
       cvWrapper.style.cursor = 'pointer';
-      const cvUrl = "https://www.canva.com/design/DAGnFUS11uc/wjNBSNbrkeGxopqGvEqU3g/edit?utm_content=DAGnFUS11uc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton";
+      const cvUrl = "https://www.canva.com/design/DAGnFUS11uc/jRYroXVkZ-sjzfrUQ5MP3A/view?utm_content=DAGnFUS11uc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h1ddd68837d";
       const openCv = () => window.open(cvUrl, "_blank", "noopener,noreferrer");
       cvWrapper.addEventListener('click', openCv);
       cvWrapper.addEventListener('keydown', (e) => {
